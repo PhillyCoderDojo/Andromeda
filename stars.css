@@ -1,0 +1,68 @@
+html {
+  height: 800px;
+  width: 600px;
+  /* background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%); */
+  overflow: hidden;
+}
+
+#stars {
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  animation: animStar 50s linear infinite;
+  box-shadow: 201px 65px #FFF , 124px 28px #FFF , 78px 50px #FFF , 642px 150px #FFF , 342px 597px #FFF , 721px 377px #FFF , 263px 620px #FFF , 632px 1040px #FFF , 10px 941px #FFF;
+}
+#stars:after {
+  content: " ";
+  position: absolute;
+  top: 800px;
+  left: 600px;
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  box-shadow: 201px 65px #FFF , 786px 745px #FFF , 720px 31px #FFF , 642px 45px #FFF , 342px 597px #FFF , 21px 377px #FFF , 263px 20px #FFF , 632px 40px #FFF , 10px 41px #FFF;
+}
+
+#stars2 {
+  width: 2px;
+  height: 2px;
+  background: transparent;
+  box-shadow: 293px 91px #FFF , 81px 84px #FFF , 434px 378px #FFF , 269px 652px #FFF , 386px 500px #FFF , 672px 88px #FFF , 384px 394px #FFF , 120px 778px #FFF , 200px 696px #FFF;
+  animation: animStar 100s linear infinite;
+}
+#stars2:after {
+  content: " ";
+  position: absolute;
+  top: 800px;
+  width: 2px;
+  height: 2px;
+  background: transparent;
+  box-shadow: 293px 91px #FFF , 81px 84px #FFF , 434px 378px #FFF , 269px 652px #FFF , 386px 500px #FFF , 672px 88px #FFF , 384px 394px #FFF , 120px 778px #FFF , 200px 696px #FFF;
+}
+
+#stars3 {
+  width: 3px;
+  height: 3px;
+  background: transparent;
+  box-shadow: 73px 570px #FFF , 24px 476px #FFF , 32px 741px #FFF , 686px 48px #FFF , 35px 727px #FFF , 519px 304px #FFF , 738px 217px #FFF , 868px 678px #FFF , 33px 76px #FFF;
+  animation: animStar 150s linear infinite;
+}
+#stars3:after {
+  content: " ";
+  position: absolute;
+  top: 800px;
+  left: 600px;
+  width: 3px;
+  height: 3px;
+  background: transparent;
+  box-shadow: 506px 570px #FFF , 24px 476px #FFF , 32px 741px #FFF , 686px 48px #FFF , 35px 727px #FFF , 519px 304px #FFF , 738px 217px #FFF , 68px 678px #FFF , 33px 76px #FFF;
+}
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-800px);
+  }
+}
